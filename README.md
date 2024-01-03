@@ -74,27 +74,4 @@ Jwt framework
     ```    
     composer require web-token/jwt-encryption-algorithm-rsa 
     ```
-
-*****BASE*****
-
-docker build . -f Dockerfile-nsso-jwt-console-base -t jwt-app:base
-
-docker run -dit --name jwt-app -v "D:/projects/NSSO/development_jwt":/var/www/html -p 8089:80 jwt-app:base
-
-
-****************LOCAL*************************************
-
-1.) docker build . -f Dockerfile-nsso-jwt-console-local -t nsso-jwt-app:local
-
-2.) docker tag nsso-jwt-app:local 816586121361.dkr.ecr.ap-south-1.amazonaws.com/nsso-jwt-app:local
-
-3.) docker run -dit --name nsso-jwt-app -v "D:/projects/development_jwt":/var/www/html -p 8089:80 nsso-jwt-app:local
-
-
-****************BETA*************************************
-
-1.) docker build . -f Dockerfile-nsso-jwt-console-beta -t nsso-jwt-app:beta
-
-2.) docker tag nsso-jwt-app:beta 816586121361.dkr.ecr.ap-south-1.amazonaws.com/nsso-jwt-app:beta
-
-3.) docker push 816586121361.dkr.ecr.ap-south-1.amazonaws.com/nsso-jwt-app:beta
+For reference https://web-token.spomky-labs.com/
